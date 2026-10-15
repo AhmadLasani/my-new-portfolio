@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <!-- Clean neutral dark portrait background -->
+  <rect width="600" height="750" fill="#111827" />
+
+  <!-- Soft gradient fill -->
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#avatarGrad)" />
+
+  <!-- Clean, dignified human silhouette -->
+  <g fill="#334155" opacity="0.85">
+    <!-- Head -->
+    <circle cx="300" cy="280" r="110" />
+    <!-- Neck -->
+    <rect x="265" y="380" width="70" height="70" rx="10" />
+    <!-- Shoulders & Torso -->
+    <path d="M 110 650 C 110 470, 180 430, 260 425 C 275 424, 325 424, 340 425 C 420 430, 490 470, 490 650 Z" />
+  </g>
+
+  <!-- Clean, friendly text at the bottom -->
+  <text x="300" y="690" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#94A3B8">
+    Photo: public/images/ahmad-lasani.jpg
+  </text>
+</svg>

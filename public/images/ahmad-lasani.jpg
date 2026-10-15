@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAECEE" />
+      <stop offset="100%" stop-color="#D5D8DC" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7A986" />
+      <stop offset="100%" stop-color="#B88662" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#211A18" />
+      <stop offset="100%" stop-color="#0E0B0A" />
+    </linearGradient>
+    <linearGradient id="jacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D3E35" />
+      <stop offset="100%" stop-color="#262722" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6E6247" />
+      <stop offset="100%" stop-color="#554B35" />
+    </linearGradient>
+  </defs>
+
+  <!-- Neutral wall background matching IMG_0053 -->
+  <rect width="600" height="750" fill="url(#bgWall)" />
+
+  <!-- Shoulders & Suit Jacket (Olive/Charcoal tailored blazer) -->
+  <path d="M 90 750 L 150 490 C 180 470, 220 460, 260 460 L 340 460 C 380 460, 420 470, 450 490 L 510 750 Z" fill="url(#jacket)" />
+
+  <!-- Olive Brown Dress Shirt -->
+  <polygon points="255,460 345,460 330,640 270,640" fill="url(#shirt)" />
+  
+  <!-- Shirt Collar Left & Right -->
+  <polygon points="250,460 280,520 300,470" fill="#7D7052" />
+  <polygon points="350,460 320,520 300,470" fill="#7D7052" />
+
+  <!-- Delicate Silver Chain Necklace -->
+  <path d="M 275 490 Q 300 520 325 490" fill="none" stroke="#D1D5DB" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Jacket Lapels (Wide modern lapels) -->
+  <polygon points="175,480 250,600 270,680 250,750 140,750" fill="#2E2F29" />
+  <polygon points="425,480 350,600 330,680 350,750 460,750" fill="#2E2F29" />
+  <line x1="250" y1="600" x2="270" y2="480" stroke="#1F201C" stroke-width="3" />
+  <line x1="350" y1="600" x2="330" y2="480" stroke="#1F201C" stroke-width="3" />
+
+  <!-- Neck -->
+  <rect x="268" y="360" width="64" height="110" rx="10" fill="url(#skin)" />
+  <!-- Neck shadow -->
+  <path d="M 268 390 Q 300 420 332 390 L 332 460 L 268 460 Z" fill="#9E6E49" opacity="0.4" />
+
+  <!-- Head Base Shape -->
+  <ellipse cx="300" cy="300" rx="90" ry="115" fill="url(#skin)" />
+
+  <!-- Ears -->
+  <ellipse cx="206" cy="305" rx="14" ry="24" fill="url(#skin)" />
+  <ellipse cx="394" cy="305" rx="14" ry="24" fill="url(#skin)" />
+
+  <!-- Eyes & Eyebrows (Expressive dark almond eyes) -->
+  <!-- Left Eyebrow -->
+  <path d="M 235 255 Q 260 248 278 258" fill="none" stroke="#1B1310" stroke-width="5" stroke-linecap="round" />
+  <!-- Right Eyebrow -->
+  <path d="M 322 258 Q 340 248 365 255" fill="none" stroke="#1B1310" stroke-width="5" stroke-linecap="round" />
+  <!-- Eyes -->
+  <ellipse cx="258" cy="275" rx="14" ry="9" fill="#FFFFFF" />
+  <circle cx="258" cy="275" r="7" fill="#261A15" />
+  <circle cx="256" cy="273" r="2" fill="#FFFFFF" />
+
+  <ellipse cx="342" cy="275" rx="14" ry="9" fill="#FFFFFF" />
+  <circle cx="342" cy="275" r="7" fill="#261A15" />
+  <circle cx="340" cy="273" r="2" fill="#FFFFFF" />
+
+  <!-- Nose -->
+  <path d="M 298 268 L 295 320 Q 300 326 308 322" fill="none" stroke="#9E6E49" stroke-width="3" stroke-linecap="round" />
+  <ellipse cx="290" cy="322" rx="4" ry="3" fill="#9E6E49" opacity="0.6" />
+  <ellipse cx="310" cy="322" rx="4" ry="3" fill="#9E6E49" opacity="0.6" />
+
+  <!-- Mouth & Lips -->
+  <path d="M 276 352 Q 300 360 324 352" fill="none" stroke="#7A4532" stroke-width="3" stroke-linecap="round" />
+  <path d="M 284 358 Q 300 366 316 358" fill="#9E5642" opacity="0.7" />
+
+  <!-- Beard & Mustache (Neat short trimmed dark beard along jaw) -->
+  <path d="M 218 300 Q 230 405 300 415 Q 370 405 382 300 Q 365 390 300 398 Q 235 390 218 300 Z" fill="#1C1412" opacity="0.85" />
+  <!-- Chin Beard -->
+  <ellipse cx="300" cy="385" rx="30" ry="18" fill="#1C1412" opacity="0.9" />
+  <!-- Mustache -->
+  <path d="M 268 342 Q 300 344 332 342 Q 300 354 268 342 Z" fill="#1C1412" opacity="0.9" />
+
+  <!-- Voluminous Stylish Wavy Hair (Parted left, swept high & stylish, exactly like IMG_0053) -->
+  <path d="M 195 270 C 185 200, 215 150, 260 140 C 290 130, 340 120, 385 145 C 420 170, 415 220, 405 270 C 390 220, 380 180, 330 180 C 270 180, 230 210, 205 250 Z" fill="url(#hairGrad)" />
+  <!-- Hair Crest Volume Top Wave -->
+  <path d="M 235 155 C 265 110, 340 105, 380 135 C 340 125, 290 130, 255 160 Z" fill="#302622" />
+  <path d="M 270 130 C 300 95, 370 100, 395 135 C 360 120, 320 120, 285 145 Z" fill="#211A18" />
+  <path d="M 220 200 C 235 170, 275 165, 305 180 C 265 175, 235 185, 220 200 Z" fill="#3D302B" />
+
+  <!-- Caption overlay indicator -->
+  <g transform="translate(30, 710)">
+    <rect width="180" height="24" rx="4" fill="#000000" opacity="0.75" />
+    <text x="90" y="16" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">AHMAD LASANI</text>
+  </g>
+</svg>

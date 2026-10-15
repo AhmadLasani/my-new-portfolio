@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #070708;
+  --bg-secondary: #0E0E10;
+  --bg-surface: #151518;
+  --accent-white: #FFFFFF;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-hairline: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #070708;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings use Space Grotesk for that high-contrast architectural editorial typography */
+h1, h2, h3, h4, h5, h6, .font-editorial {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* Code and technical labels */
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070708;
+}
+::-webkit-scrollbar-thumb {
+  background: #222225;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444448;
+}
+
+/* Accessible clean focus ring */
+:focus-visible {
+  outline: 1.5px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+/* Crosshair marker utility */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::after {
+  content: "+";
+  position: absolute;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

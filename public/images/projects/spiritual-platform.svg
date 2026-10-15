@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="100%" height="100%">
+  <defs>
+    <radialGradient id="darkHeader" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#363636" />
+      <stop offset="60%" stop-color="#1A1A1A" />
+      <stop offset="100%" stop-color="#0A0A0A" />
+    </radialGradient>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Top Hero Header (Dark Vignette) -->
+  <rect width="1440" height="420" fill="url(#darkHeader)" />
+
+  <g transform="translate(720, 160)">
+    <!-- English Title -->
+    <text x="0" y="0" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">
+      Yad-e-Sakina Bintul Hussain
+    </text>
+
+    <!-- Urdu Title Calligraphy -->
+    <text x="0" y="70" text-anchor="middle" fill="#FFFFFF" font-family="'Noto Nastaliq Urdu', 'Scheherazade New', 'Amiri', serif" font-size="42" font-weight="700">
+      یادِ سکینہ بنت الحسین
+    </text>
+
+    <!-- Location Line -->
+    <text x="0" y="115" text-anchor="middle" fill="#E0E0E0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="400">
+      Mohammadpur, Ghazipur, UP(India)
+    </text>
+  </g>
+
+  <!-- Bottom Section: Clean White Card -->
+  <rect y="420" width="1440" height="480" fill="#F4F4F6" />
+
+  <g transform="translate(240, 470)" filter="url(#softShadow)">
+    <rect width="960" height="380" rx="4" fill="#FFFFFF" />
+
+    <!-- About Us Heading -->
+    <text x="480" y="65" text-anchor="middle" fill="#2D2D2D" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+      About Us
+    </text>
+
+    <!-- Detailed About Text from Screenshot -->
+    <g transform="translate(60, 110)">
+      <text fill="#4A4A4A" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" text-anchor="middle">
+        <tspan x="420" dy="0">Yade Sakina Bintul Hussain is a solemn and spiritual juloos held annually on 9th Safar to honor the memory and</tspan>
+        <tspan x="420" dy="28">unimaginable suffering of Bibi Sakina (S.A.), the beloved daughter of Imam Hussain (A.S.). This azadari procession is a</tspan>
+        <tspan x="420" dy="28">heartfelt expression of grief and remembrance by the Shia community, where mourners gather to reflect on the tragedy of</tspan>
+        <tspan x="420" dy="28">Karbala. The event includes recitations of majlis, nohas, marsiyas, and matam as symbols of devotion, love, and loyalty to</tspan>
+        <tspan x="420" dy="28">the Ahlul Bayt (A.S.). Through this juloos, we aim to keep alive the legacy of patience, sacrifice, and steadfast faith</tspan>
+        <tspan x="420" dy="28">exemplified by Bibi Sakina (S.A.) and the martyrs of Karbala. Labbaika Ya Hussain(a.s).</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
