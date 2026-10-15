@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiArrowDown, FiExternalLink, FiMail, FiLinkedin, FiCamera } from 'react-icons/fi';
 import { SiGithub, SiLeetcode } from 'react-icons/si';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
+import profileImage from "./1.jpeg";
 
 export const Hero: React.FC = () => {
   const { personal } = PORTFOLIO_DATA;
@@ -128,11 +129,11 @@ export const Hero: React.FC = () => {
               {/* Hairline frame surrounding photo */}
               <div className="relative p-2 border border-white/15 bg-[#0C0C0E] shadow-2xl">
                 <div className="relative overflow-hidden aspect-[4/5] bg-neutral-900 group">
-                  <img
-                    src="/src/components/1.jpeg"
-                    alt="Ahmad Lasani"
-                    className="w-full h-full object-cover object-top filter transition-all duration-500"
-                  />
+                 <img
+  src={profileImage}
+  alt="Ahmad Lasani"
+  className="w-full h-full object-cover object-top transition-all duration-500"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
                   
                   {/* Subtle hover upload overlay */}
